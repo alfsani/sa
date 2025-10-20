@@ -65,7 +65,7 @@ export default class WebGLContent {
     renderer.setClearColor(0x0e0e0e, 1.0);
 
     await Promise.all([
-      texLoader.loadAsync('/sketch-threejs/img/sketch/flow_field/noise.jpg'),
+      texLoader.loadAsync('./img/sketch/flow_field/noise.jpg'),
     ])
     .then(response => {
       const noiseTex = response[0];

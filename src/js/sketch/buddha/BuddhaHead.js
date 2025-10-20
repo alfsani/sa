@@ -21,8 +21,8 @@ export default class BuddhaHead {
   }
   async createObj() {
     // Load an obj file.
-    const obj = await objLoader.loadAsync('/sketch-threejs/model/buddha/buddha_head.obj');
-    this.uniforms.tex.value = await texLoader.loadAsync('/sketch-threejs/model/buddha/buddha_ao.jpg');
+    const obj = await objLoader.loadAsync('./model/buddha/buddha_head.obj');
+    this.uniforms.tex.value = await texLoader.loadAsync('./model/buddha/buddha_ao.jpg');
 
     // Define Material
     const material = new THREE.RawShaderMaterial({

@@ -191,7 +191,7 @@ export default async function() {
   camera.lookAt(new THREE.Vector3());
 
   // Load an obj file.
-  const obj = await objLoader.loadAsync('/sketch-threejs/model/newyear2019/boar_head.obj');
+  const obj = await objLoader.loadAsync('./model/newyear2019/boar_head.obj');
   const boarGeometry = obj.children[0].geometry;
 
   boarHead = new BoarHead(boarGeometry);

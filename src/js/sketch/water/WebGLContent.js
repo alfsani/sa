@@ -50,8 +50,8 @@ export default class WebGLContent {
 
     await Promise
       .all([
-        texLoader.loadAsync('/sketch-threejs/img/sketch/water/normal.jpg'),
-        texLoader.loadAsync('/sketch-threejs/img/sketch/water/image.jpg')
+        texLoader.loadAsync('./img/sketch/water/normal.jpg'),
+        texLoader.loadAsync('./img/sketch/water/image.jpg')
       ])
       .then((response) => {
         response[0].wrapT = response[0].wrapS = THREE.RepeatWrapping;

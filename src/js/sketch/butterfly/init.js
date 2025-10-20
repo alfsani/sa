@@ -166,7 +166,7 @@ export default function() {
     cameraBack.lookAt(new THREE.Vector3(0, lookAtY, 0));
     floor.mirrorCamera.lookAt(new THREE.Vector3(0, -lookAtY, 0));
 
-    loader.load('/sketch-threejs/img/sketch/butterfly/tex.png', (texture) => {
+    loader.load('./img/sketch/butterfly/tex.png', (texture) => {
       texture.magFilter = THREE.NearestFilter;
       texture.minFilter = THREE.NearestFilter;
 

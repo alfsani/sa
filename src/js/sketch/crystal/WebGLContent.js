@@ -76,10 +76,10 @@ export default class WebGLContent {
     let crystalFogTex;
 
     await Promise.all([
-      objLoader.loadAsync('/sketch-threejs/model/crystal/crystal.obj'),
-      texLoader.loadAsync('/sketch-threejs/img/sketch/crystal/normal.jpg'),
-      texLoader.loadAsync('/sketch-threejs/img/sketch/crystal/surface.jpg'),
-      texLoader.loadAsync('/sketch-threejs/img/sketch/crystal/fog.jpg'),
+      objLoader.loadAsync('./model/crystal/crystal.obj'),
+      texLoader.loadAsync('./img/sketch/crystal/normal.jpg'),
+      texLoader.loadAsync('./img/sketch/crystal/surface.jpg'),
+      texLoader.loadAsync('./img/sketch/crystal/fog.jpg'),
     ])
     .then((response) => {
       crystalGeometries = response[0].children.map((mesh) => {

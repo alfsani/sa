@@ -53,8 +53,8 @@ export default function() {
   const postEffectBloom = new PostEffectBloom(BRIGHT_MIN, renderBack1.texture, renderBack2.texture);
 
   const texArray = [
-    '/sketch-threejs/img/sketch/transform/tex.png',
-    '/sketch-threejs/img/sketch/transform/flower.jpg'
+    './img/sketch/transform/tex.png',
+    './img/sketch/transform/flower.jpg'
   ];
   const textures = [];
 

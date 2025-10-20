@@ -88,7 +88,7 @@ export default class Typo {
       depthWrite: false,
     });
 
-    this.uniforms.texHannyaShingyo.value = await texLoader.loadAsync('/sketch-threejs/img/sketch/buddha/hannya_text.png');
+    this.uniforms.texHannyaShingyo.value = await texLoader.loadAsync('./img/sketch/buddha/hannya_text.png');
     this.uniforms.unitUv.value = 1 / gridsPerSide;
 
     // Create Object3D

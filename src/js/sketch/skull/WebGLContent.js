@@ -42,8 +42,8 @@ export default class WebGLContent {
     renderer.setClearColor(0x000000, 1.0);
 
     await Promise.all([
-      objLoader.loadAsync('/sketch-threejs/model/skull/SkullHead.obj'),
-      texLoader.loadAsync('/sketch-threejs/img/sketch/splash/noise.png'),
+      objLoader.loadAsync('./model/skull/SkullHead.obj'),
+      texLoader.loadAsync('./img/sketch/splash/noise.png'),
     ]).then((response) => {
       const geometrySkullHead = response[0].children[1].geometry;
       const geometrySkullJaw = response[0].children[0].geometry;

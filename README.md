@@ -1,4 +1,4 @@
-# ![sketch of three.js](http://ykob.github.io/sketch-threejs/img/common/ogp_common.jpg)
+# ![sketch of three.js](http://ykob.github.io./img/common/ogp_common.jpg)
 
 ## ⚠️ Notice: This repository is no longer actively maintained or updated.
 
@@ -11,7 +11,7 @@ Thank you for your understanding!
 ---
 
 Interactive sketches made with three.js.  
-https://ykob.github.io/sketch-threejs/
+https://ykob.github.io./
 
 This code is released under the MIT license.  
 If you want to use some code, you can use these freely by adding license notation.

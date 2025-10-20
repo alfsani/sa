@@ -81,11 +81,11 @@ export default async function() {
   resizeWindow();
 
   await Promise.all([
-    texLoader.loadAsync('/sketch-threejs/img/sketch/dissolve/osaka01.jpg'),
-    texLoader.loadAsync('/sketch-threejs/img/sketch/dissolve/osaka02.jpg'),
-    texLoader.loadAsync('/sketch-threejs/img/sketch/dissolve/osaka03.jpg'),
-    texLoader.loadAsync('/sketch-threejs/img/sketch/dissolve/osaka04.jpg'),
-    texLoader.loadAsync('/sketch-threejs/img/sketch/dissolve/osaka05.jpg'),
+    texLoader.loadAsync('./img/sketch/dissolve/osaka01.jpg'),
+    texLoader.loadAsync('./img/sketch/dissolve/osaka02.jpg'),
+    texLoader.loadAsync('./img/sketch/dissolve/osaka03.jpg'),
+    texLoader.loadAsync('./img/sketch/dissolve/osaka04.jpg'),
+    texLoader.loadAsync('./img/sketch/dissolve/osaka05.jpg'),
   ]).then((response) => {
     image.start(resolution, response);
   });

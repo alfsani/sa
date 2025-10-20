@@ -35,10 +35,10 @@ export default class WebGLContent {
     renderer.setClearColor(0x0e0e0e, 1.0);
 
     await Promise.all([
-      texLoader.loadAsync('/sketch-threejs/img/sketch/burn/noise.png'),
-      texLoader.loadAsync('/sketch-threejs/img/sketch/burn/image01.jpg'),
-      texLoader.loadAsync('/sketch-threejs/img/sketch/burn/image02.jpg'),
-      texLoader.loadAsync('/sketch-threejs/img/sketch/burn/image03.jpg'),
+      texLoader.loadAsync('./img/sketch/burn/noise.png'),
+      texLoader.loadAsync('./img/sketch/burn/image01.jpg'),
+      texLoader.loadAsync('./img/sketch/burn/image02.jpg'),
+      texLoader.loadAsync('./img/sketch/burn/image03.jpg'),
     ]).then((response) => {
       const noiseTex = response[0];
       const imgTexes = response.slice(1);

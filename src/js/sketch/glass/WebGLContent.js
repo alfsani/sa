@@ -49,10 +49,10 @@ export default class WebGLContent {
     
     await Promise
       .all([
-        objLoader.loadAsync('/sketch-threejs/model/glass/glass.obj'),
-        texLoader.loadAsync('/sketch-threejs/img/sketch/glass/landscape.jpg'),
-        texLoader.loadAsync('/sketch-threejs/img/sketch/glass/roughness.jpg'),
-        texLoader.loadAsync('/sketch-threejs/img/sketch/glass/noise.jpg')
+        objLoader.loadAsync('./model/glass/glass.obj'),
+        texLoader.loadAsync('./img/sketch/glass/landscape.jpg'),
+        texLoader.loadAsync('./img/sketch/glass/roughness.jpg'),
+        texLoader.loadAsync('./img/sketch/glass/noise.jpg')
       ])
       .then((response) => {
         response[2].wrapT = response[2].wrapS = THREE.RepeatWrapping;

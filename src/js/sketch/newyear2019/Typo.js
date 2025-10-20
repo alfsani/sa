@@ -39,7 +39,7 @@ export default class Typo extends THREE.Mesh {
   }
   async loadTexture() {
     this.material.uniforms.tex.value = await texLoader.loadAsync(
-      '/sketch-threejs/img/sketch/newyear2019/typo.png'
+      './img/sketch/newyear2019/typo.png'
     );
   }
   render(time) {
